@@ -16,7 +16,7 @@ export default function Jumbotron({
   ...restProps
 }) {
   return (
-    <Item>
+    <Item {...restProps}>
       <Inner direction={direction}>{children}</Inner>
     </Item>
   );
