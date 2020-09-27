@@ -1,5 +1,8 @@
-import React, { Fragment } from 'react';
+import React from 'react';
 import { render } from 'react-dom';
+
+import { firebase } from './lib/firebase.prod';
+import { FirebaseContext } from './context/firebase';
 
 import App from './App';
 
@@ -7,9 +10,9 @@ import 'normalize.css';
 import { GlobalStyles } from './GlobalStyles';
 
 render(
-  <Fragment>
+  <FirebaseContext.Provider value={{ firebase }}>
     <GlobalStyles />
     <App />
-  </Fragment>,
+  </FirebaseContext.Provider>,
   document.getElementById('root')
 );
