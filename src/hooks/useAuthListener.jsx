@@ -20,7 +20,8 @@ export default function useAuthListener() {
     });
 
     return () => listener();
-  });
+    // eslint-disable-next-line
+  }, []);
 
   return { user };
 }
