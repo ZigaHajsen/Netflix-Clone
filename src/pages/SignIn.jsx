@@ -1,6 +1,9 @@
-import React, { Fragment, useState } from 'react';
+import React, { Fragment, useState, useContext } from 'react';
 
+import { useHistory } from 'react-router-dom';
 import * as ROUTES from '../constants/routes';
+
+import { FirebaseContext } from '../context/firebase';
 
 import { HeaderContainer } from '../containers/HeaderContainer';
 import { FooterContainer } from '../containers/FooterContainer';
@@ -11,10 +14,26 @@ export default function SignIn() {
   const [password, setPassword] = useState('');
   const [error, setError] = useState('');
 
+  const { firebase } = useContext(FirebaseContext);
+
+  const history = useHistory();
+
   const isInvalid = password === '' || emailAddress === '';
 
   const handleSignIn = (event) => {
     event.preventDefault();
+
+    firebase
+      .auth()
+      .signInWithEmailAndPassword(emailAddress, password)
+      .then(() => {
+        history.push(ROUTES.BROWSE);
+      })
+      .catch((error) => {
+        setEmailAddress('');
+        setPassword('');
+        setError(error.message);
+      });
   };
 
   return (
