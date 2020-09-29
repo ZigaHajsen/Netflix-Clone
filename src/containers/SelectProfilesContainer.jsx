@@ -1,8 +1,8 @@
 import React, { Fragment } from 'react';
 
-import * as ROUTES from '../constants/routes';
-
 import { Header, Profiles } from '../components';
+
+import * as ROUTES from '../constants/routes';
 
 import logo from '../logo.svg';
 
