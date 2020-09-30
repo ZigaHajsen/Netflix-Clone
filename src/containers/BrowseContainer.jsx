@@ -3,7 +3,7 @@ import React, { Fragment, useState, useContext, useEffect } from 'react';
 import { FirebaseContext } from '../context/firebase';
 
 import { SelectProfilesContainer } from './SelectProfilesContainer';
-import { Header, Loading } from '../components';
+import { Header, Loading, Card } from '../components';
 
 import * as ROUTES from '../constants/routes';
 
@@ -66,6 +66,7 @@ export function BrowseContainer({ slides }) {
           <Header.PlayButton>Play</Header.PlayButton>
         </Header.Feature>
       </Header>
+      <Card.Group></Card.Group>
     </Fragment>
   ) : (
     <SelectProfilesContainer user={user} setProfile={setProfile} />
