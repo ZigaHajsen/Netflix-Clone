@@ -14,6 +14,7 @@ export const Container = styled.div`
   flex-direction: column;
   margin-bottom: 50px;
   box-sizing: border-box;
+
   > ${Title} {
     @media (max-width: 1000px) {
       margin-left: 30px;
@@ -31,6 +32,7 @@ export const Group = styled.div`
     flexDirection === 'row' ? 'row' : 'column'};
   ${({ alignItems }) => alignItems && `align-items: ${alignItems}`};
   ${({ margin }) => margin && `margin: ${margin}`};
+
   > ${Container}:first-of-type {
     @media (min-width: 1100px) {
       margin-top: -150px;
@@ -144,11 +146,13 @@ export const Feature = styled.div`
   @media (max-width: 1000px) {
     height: auto;
     background-size: auto;
+
     ${Title} {
       font-size: 20px;
       line-height: 20px;
       margin-bottom: 10px;
     }
+
     ${FeatureText} {
       font-size: 14px;
     }
