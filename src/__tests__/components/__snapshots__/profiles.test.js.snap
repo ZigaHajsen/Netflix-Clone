@@ -1,0 +1,61 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Profiles /> renders the <Profiles /> with populated data 1`] = `
+<div
+  class="ProfilesStyles__Container-sc-1sszz6v-0 cWtfGE"
+>
+  <h1
+    class="ProfilesStyles__Title-sc-1sszz6v-1 XhyYI"
+  >
+    Who's watching?
+  </h1>
+  <ul
+    class="ProfilesStyles__List-sc-1sszz6v-2 dDrJcD"
+  >
+    <li
+      class="ProfilesStyles__Item-sc-1sszz6v-5 jKrhfh"
+    >
+      <img
+        class="ProfilesStyles__Picture-sc-1sszz6v-4 iETRUU"
+        data-testid="profile-picture"
+        src="/images/users//images/karl.png.png"
+      />
+      <p
+        class="ProfilesStyles__Name-sc-1sszz6v-3 jLowuL"
+      >
+        Žiga
+      </p>
+    </li>
+  </ul>
+</div>
+`;
+
+exports[`<Profiles /> renders the <Profiles /> with populated data but misc profile image 1`] = `
+<div
+  class="ProfilesStyles__Container-sc-1sszz6v-0 cWtfGE"
+>
+  <h1
+    class="ProfilesStyles__Title-sc-1sszz6v-1 XhyYI"
+  >
+    Who's watching?
+  </h1>
+  <ul
+    class="ProfilesStyles__List-sc-1sszz6v-2 dDrJcD"
+  >
+    <li
+      class="ProfilesStyles__Item-sc-1sszz6v-5 jKrhfh"
+    >
+      <img
+        class="ProfilesStyles__Picture-sc-1sszz6v-4 iETRUU"
+        data-testid="profile-picture-misc"
+        src="/images/misc/loading.gif"
+      />
+      <p
+        class="ProfilesStyles__Name-sc-1sszz6v-3 jLowuL"
+      >
+        Žiga
+      </p>
+    </li>
+  </ul>
+</div>
+`;
