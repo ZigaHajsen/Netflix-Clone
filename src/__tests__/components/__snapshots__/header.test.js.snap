@@ -1,0 +1,133 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<Header /> renders the basic <Header /> with a background 1`] = `
+<div
+  class="HeaderStyles__Background-sc-1b0wevi-0 fuFBDz"
+  data-testid="header-bg"
+>
+  <div
+    class="HeaderStyles__Container-sc-1b0wevi-1 eRnMjX"
+  >
+    <p
+      class="HeaderStyles__Link-sc-1b0wevi-2 jJwYTB"
+    >
+      Hello I am a link!
+    </p>
+  </div>
+</div>
+`;
+
+exports[`<Header /> renders the basic <Header /> without a background 1`] = `
+<div
+  class="HeaderStyles__Container-sc-1b0wevi-1 eRnMjX"
+>
+  <p
+    class="HeaderStyles__Link-sc-1b0wevi-2 iVjyHh"
+  >
+    Hello I am a link!
+  </p>
+</div>
+`;
+
+exports[`<Header /> renders the full <Header> with a background 1`] = `
+<div
+  class="HeaderStyles__Background-sc-1b0wevi-0 fDzzVl"
+  data-testid="header-bg"
+  src="joker1"
+>
+  <div
+    class="HeaderStyles__Container-sc-1b0wevi-1 eRnMjX"
+  >
+    <div
+      class="HeaderStyles__Group-sc-1b0wevi-3 dBQJLs"
+    >
+      <p
+        class="HeaderStyles__Link-sc-1b0wevi-2 iVjyHh"
+      >
+        Series
+      </p>
+      <p
+        class="HeaderStyles__Link-sc-1b0wevi-2 iVjyHh"
+      >
+        Films
+      </p>
+    </div>
+    <div
+      class="HeaderStyles__Group-sc-1b0wevi-3 dBQJLs"
+    >
+      <div
+        class="HeaderStyles__Search-sc-1b0wevi-5 kaLnag"
+      >
+        <button
+          class="HeaderStyles__SearchIcon-sc-1b0wevi-6 wtdsd"
+          data-testid="search-click"
+        >
+          <img
+            alt="Search"
+            src="/images/icons/search.png"
+          />
+        </button>
+        <input
+          class="HeaderStyles__SearchInput-sc-1b0wevi-4 kfVMMS"
+          data-testid="search-input"
+          placeholder="Search films and series"
+          value="Joker"
+        />
+      </div>
+      <div
+        class="HeaderStyles__Profile-sc-1b0wevi-10 gvBxHQ"
+      >
+        <button
+          class="HeaderStyles__Picture-sc-1b0wevi-8 drjZNh"
+          src="/images/users//images/ziga.png.png"
+        />
+        <div
+          class="HeaderStyles__Dropdown-sc-1b0wevi-9 elWZhp"
+        >
+          <div
+            class="HeaderStyles__Group-sc-1b0wevi-3 dBQJLs"
+          >
+            <button
+              class="HeaderStyles__Picture-sc-1b0wevi-8 drjZNh"
+              src="/images/users//images/ziga.png.png"
+            />
+            <p
+              class="HeaderStyles__Link-sc-1b0wevi-2 iVjyHh"
+            >
+              Žiga Hajšen
+            </p>
+          </div>
+          <div
+            class="HeaderStyles__Group-sc-1b0wevi-3 dBQJLs"
+          >
+            <p
+              class="HeaderStyles__Link-sc-1b0wevi-2 iVjyHh"
+            >
+              Sign out
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div
+    class="HeaderStyles__Container-sc-1b0wevi-1 HeaderStyles__Feature-sc-1b0wevi-11 eRnMjX kpuXgd"
+  >
+    <h2
+      class="HeaderStyles__FeatureCallOut-sc-1b0wevi-12 fKAhYH"
+    >
+      Watch Joker Now
+    </h2>
+    <p
+      class="HeaderStyles__Text-sc-1b0wevi-13 kmGeBX"
+    >
+      Forever alone in a crowd...
+    </p>
+    <button
+      class="HeaderStyles__PlayButton-sc-1b0wevi-15 fyuyOW"
+    >
+      Play
+    </button>
+  </div>
+</div>
+`;
