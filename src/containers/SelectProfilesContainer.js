@@ -19,6 +19,7 @@ export function SelectProfilesContainer({ user, setProfile }) {
         <Profiles.Title>Who's watching?</Profiles.Title>
         <Profiles.List>
           <Profiles.User
+            data-testid='user-profile'
             onClick={() =>
               setProfile({
                 displayName: user.displayName,
